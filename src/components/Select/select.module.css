@@ -1,0 +1,92 @@
+.select {
+  position: relative;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 0.75rem;
+  padding-right: 2.5rem;
+  background-color: #ffffff;
+  width: 100%;
+  border-style:solid;
+  border-radius: 0.125rem;
+  border-width: 1px;
+  cursor: default;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  border-color: var(--color-disabled);
+  color: var(--color-text-input);
+
+  @media (min-width: 640px) {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+}
+.select:focus {
+  outline: 0;
+  border-width: 2px;
+  border-color: var(--color-primary);
+  box-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width))
+    var(--tw-ring-color);
+  --ring-color: var(--color-primary);
+}
+.input_label {
+  padding-bottom: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+  color: var(--color-text-header);
+}
+.select_selected {
+  position: relative;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.75rem;
+  padding-right: 2.25rem;
+  color: #ffffff;
+  cursor: default;
+  user-select: none;
+  background-color: var(--color-primary);
+}
+.select_unselected {
+  position: relative;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.75rem;
+  padding-right: 2.25rem;
+  cursor: default;
+  user-select: none;
+  color: var(--color-text-input);
+}
+.select_unselected:hover {
+  color: #ffffff;
+  background-color: var(--color-primary);
+}
+.display_option {
+  list-style-position: none;
+  padding-left: 0;
+  overflow: auto;
+  position: absolute;
+  z-index: 10;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  margin-top: 0.25rem;
+  background-color: #ffffff;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  font-size: 1rem;
+  line-height: 1.5rem;
+  width: 100%;
+  max-height: 14rem;
+  border-radius: 0.375rem;
+  box-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width))
+    var(--tw-ring-color);
+  --ring-color: #000000;
+  --ring-opacity: 0.05;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+
+  @media (min-width: 640px) {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+}
+.display_option:focus {
+  outline: 0;
+}
