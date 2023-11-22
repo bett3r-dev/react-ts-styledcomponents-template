@@ -1,9 +1,9 @@
-import { CSSProperties, ReactNode } from 'react'
+import { CSSProperties, InputHTMLAttributes, ReactNode } from 'react'
 import InputSuccessMessage from '../SuccessMessage'
 import InputErrorMessage from '../ErrorMessage'
 import { Icon_Textfield_Base, Icon_Textfield_Icon_Base, Icon_Textfield_Input_Base, Input_Label_Base, Textfield_Base, Textfield_Input_Base } from "./TextField.styles";
 
-export type TextFieldTypes = {
+export interface TextFieldTypes extends InputHTMLAttributes<HTMLInputElement> {
   children?: ReactNode,
   placeholder?: string,
   customStyles?: CSSProperties,
