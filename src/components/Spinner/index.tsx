@@ -1,6 +1,5 @@
 import { CSSProperties } from "react";
 
-import styles from "./spinner.module.css";
 import { Spinner_Circle, Spinner_Path, Spinner_Svg } from "./Spinner.styles";
 
 export type SpinnerTypes = {
